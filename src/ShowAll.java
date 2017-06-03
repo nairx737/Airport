@@ -30,8 +30,20 @@ public class ShowAll extends HttpServlet {
             String s = "";
             while (resultSet.next()) {
                 s += resultSet.getString("FlyFrom") + "<br>";
+                out.println(s);
+
+                out.println(
+                        "<tr bgcolor=\"#DEB887\">" +
+                        "<td>" + resultSet.getString("id") + "</td>" +
+                        "<td>" + resultSet.getString("FlyFrom") + "</td>" +
+                        "<td>" + resultSet.getString("FlyTo") + "</td>" +
+                        "<td>" + resultSet.getString("Departing") + "</td>" +
+                        "<td>" + resultSet.getString("Price") + "</td>" +
+                        "</td>"
+                );
             }
-            out.println(s);
+
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
