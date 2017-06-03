@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.sql.*;
 
 
-@WebServlet(name = "ShowAll")
+@WebServlet(name = "ShowAll", urlPatterns = "/anun")
 public class ShowAll extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
