@@ -21,7 +21,13 @@
     <column id="10" parent="7" name="FlyTo">
       <data-type>varchar(50)|0</data-type>
     </column>
-    <key id="11" parent="7" name="PRIMARY">
+    <column id="11" parent="7" name="Departing">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="12" parent="7" name="Price">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="13" parent="7" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>

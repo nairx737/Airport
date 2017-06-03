@@ -34,18 +34,18 @@ public class result extends HttpServlet {
         String Departing=request.getParameter("Departing");
         String Price=request.getParameter("Price");
 
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        try {
-            Date DepartingDate= sdf.parse(Departing);
-            out.print(DepartingDate+"<br>");
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//        try {
+//            Date DepartingDate= sdf.parse(Departing);
+//            out.print(DepartingDate+"<br>");
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Airport", "root", "00410033");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Airport", "root", "1111");
             Statement statement = connection.createStatement();
-            String query="INSERT INTO airport.flights(From, To, Day, Price)" +
+            String query="INSERT INTO airport.flights(FlyFrom, FlyTo, Departing, Price)" +
                     " VALUES ("+FlyFrom+","+FlyTO+","+Departing+","+Price+")";
             statement.executeUpdate(query);
 
@@ -61,6 +61,7 @@ public class result extends HttpServlet {
             e.printStackTrace();
         }
 
+out.println("<p> Successful");
 
     }
 

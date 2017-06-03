@@ -1,5 +1,5 @@
 body{
-    background: url(images/blury%20back.png);
+    background: url(images/bluryBack.png);
     background-size: 100%;
 
 }
@@ -45,7 +45,7 @@ body{
     -moz-transition:  0.3s ease-in-out,
     -moz-transform 0.3s ease-in-out;
     transition: all 0.3s ease-in-out,
-    transform 0.3s ease-in-out, ;
+    transform 0.3s ease-in-out ;
 }
 
 .box:hover {

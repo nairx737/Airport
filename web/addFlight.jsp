@@ -11,7 +11,6 @@
       <input type="text" name="FlyFrom" placeholder="Flying from">
       <input type="text" name="FlyTo" placeholder="Fly to">
       <input type="date" name="Departing" placeholder="Departing day">
-      <input type="date" name="Returning" placeholder="Returning day">
       <input type="text" name="Price" placeholder="Price in USD">
       <input type="submit" value="submit">
 

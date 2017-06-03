@@ -13,4 +13,13 @@
         <servlet-name>result</servlet-name>
         <url-pattern>/result</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowAll</servlet-name>
+        <servlet-class>ShowAll</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowAll</servlet-name>
+        <url-pattern>/ShowAll</url-pattern>
+    </servlet-mapping>
 </web-app>
