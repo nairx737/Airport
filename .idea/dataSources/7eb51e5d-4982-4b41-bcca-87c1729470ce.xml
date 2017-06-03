@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - Airport@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="airport">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="elq"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="sys"/>
+    <table id="7" parent="1" name="table_name"/>
+    <column id="8" parent="7" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="9" parent="7" name="FlyFrom">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="10" parent="7" name="FlyTo">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="11" parent="7" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

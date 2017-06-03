@@ -1,0 +1,13 @@
+body{
+    background: url(images/blury%20back.png);
+    background-size: 100%;
+
+}
+.container {
+    max-width:960px;
+    margin:0 auto;
+    padding:6% 2%;
+    background: url(images/back2.jpg);
+    background-size: 100%;
+    border-radius: 30px;
+}
